@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB8C00"
+    tools:context=".LastUI">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/congra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img1"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coder"
+        app:cardCornerRadius="30dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="20dp"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coder"
+            app:riv_corner_radius="30dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/logical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Never stop on this way..."
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="15dp"
+        android:visibility="invisible"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/borderColor"
+        android:background="@drawable/edit_style"
+        android:layout_below="@+id/coder"/>
+
+</RelativeLayout>
